@@ -113,11 +113,11 @@ When(
   }
 );
 
-When("выбирает место в зале кинотеатра 5 ряд 6 место", async function () {
+When("выбирает место в зале кинотеатра 8 ряд 2 место", async function () {
   await this.page.waitForSelector("div.buying-scheme");
   await clickElement(
     this.page,
-    "body > main > section > div.buying-scheme > div.buying-scheme__wrapper > div:nth-child(5) > span:nth-child(6)"
+    "body > main > section > div.buying-scheme > div.buying-scheme__wrapper > div:nth-child(8) > span:nth-child(2)"
   );
   await clickElement(this.page, "button");
 });
